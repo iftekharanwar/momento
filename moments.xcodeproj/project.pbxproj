@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		286862D82EC8E226005183BA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 286862D72EC8E226005183BA /* FirebaseAuth */; };
+		286862DA2EC8E226005183BA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 286862D92EC8E226005183BA /* FirebaseCore */; };
+		286862DC2EC8E226005183BA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 286862DB2EC8E226005183BA /* FirebaseFirestore */; };
+		286AB3BE2EC67E7100AAD09E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286AB3862EC5A79100AAD09E /* WidgetKit.framework */; };
+		286AB3BF2EC67E7100AAD09E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286AB3882EC5A79100AAD09E /* SwiftUI.framework */; };
+		286AB3CE2EC67E7300AAD09E /* MomentsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 286AB3BD2EC67E7100AAD09E /* MomentsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		286AB3B62EC5C3DC00AAD09E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 281A9D2F2EBEB5B8002C0C3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 286AB3BC2EC67E7100AAD09E;
+			remoteInfo = MomentsWidgetExtension;
+		};
+		286AB3CC2EC67E7300AAD09E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 281A9D2F2EBEB5B8002C0C3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 286AB3BC2EC67E7100AAD09E;
+			remoteInfo = MomentsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		286AB39D2EC5A79200AAD09E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				286AB3CE2EC67E7300AAD09E /* MomentsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		281A9D372EBEB5B8002C0C3D /* moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		286AB3862EC5A79100AAD09E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		286AB3882EC5A79100AAD09E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		286AB3BD2EC67E7100AAD09E /* MomentsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MomentsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		286AB3D52EC67F4100AAD09E /* MomentsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomentsWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		286AB3422EC5829700AAD09E /* Exceptions for "moments" folder in "moments" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 281A9D362EBEB5B8002C0C3D /* moments */;
+		};
+		286AB3D22EC67E7300AAD09E /* Exceptions for "MomentsWidget" folder in "MomentsWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 286AB3BC2EC67E7100AAD09E /* MomentsWidgetExtension */;
+		};
+		286AB3D72EC67FDD00AAD09E /* Exceptions for "moments" folder in "MomentsWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/ContentModels.swift,
+				Shared/SharedDataManager.swift,
+			);
+			target = 286AB3BC2EC67E7100AAD09E /* MomentsWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		281A9D392EBEB5B8002C0C3D /* moments */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				286AB3422EC5829700AAD09E /* Exceptions for "moments" folder in "moments" target */,
+				286AB3D72EC67FDD00AAD09E /* Exceptions for "moments" folder in "MomentsWidgetExtension" target */,
+			);
+			path = moments;
+			sourceTree = "<group>";
+		};
+		286AB3C02EC67E7100AAD09E /* MomentsWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				286AB3D22EC67E7300AAD09E /* Exceptions for "MomentsWidget" folder in "MomentsWidgetExtension" target */,
+			);
+			path = MomentsWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281A9D342EBEB5B8002C0C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286862DA2EC8E226005183BA /* FirebaseCore in Frameworks */,
+				286862D82EC8E226005183BA /* FirebaseAuth in Frameworks */,
+				286862DC2EC8E226005183BA /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286AB3BA2EC67E7100AAD09E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286AB3BF2EC67E7100AAD09E /* SwiftUI.framework in Frameworks */,
+				286AB3BE2EC67E7100AAD09E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281A9D2E2EBEB5B8002C0C3D = {
+			isa = PBXGroup;
+			children = (
+				286AB3D52EC67F4100AAD09E /* MomentsWidgetExtension.entitlements */,
+				281A9D392EBEB5B8002C0C3D /* moments */,
+				286AB3C02EC67E7100AAD09E /* MomentsWidget */,
+				286AB3852EC5A79100AAD09E /* Frameworks */,
+				281A9D382EBEB5B8002C0C3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		281A9D382EBEB5B8002C0C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				281A9D372EBEB5B8002C0C3D /* moments.app */,
+				286AB3BD2EC67E7100AAD09E /* MomentsWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		286AB3852EC5A79100AAD09E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				286AB3862EC5A79100AAD09E /* WidgetKit.framework */,
+				286AB3882EC5A79100AAD09E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		281A9D362EBEB5B8002C0C3D /* moments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281A9D422EBEB5B9002C0C3D /* Build configuration list for PBXNativeTarget "moments" */;
+			buildPhases = (
+				281A9D332EBEB5B8002C0C3D /* Sources */,
+				281A9D342EBEB5B8002C0C3D /* Frameworks */,
+				281A9D352EBEB5B8002C0C3D /* Resources */,
+				286AB39D2EC5A79200AAD09E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				286AB3B72EC5C3DC00AAD09E /* PBXTargetDependency */,
+				286AB3CD2EC67E7300AAD09E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				281A9D392EBEB5B8002C0C3D /* moments */,
+			);
+			name = moments;
+			packageProductDependencies = (
+				286862D72EC8E226005183BA /* FirebaseAuth */,
+				286862D92EC8E226005183BA /* FirebaseCore */,
+				286862DB2EC8E226005183BA /* FirebaseFirestore */,
+			);
+			productName = moments;
+			productReference = 281A9D372EBEB5B8002C0C3D /* moments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		286AB3BC2EC67E7100AAD09E /* MomentsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286AB3CF2EC67E7300AAD09E /* Build configuration list for PBXNativeTarget "MomentsWidgetExtension" */;
+			buildPhases = (
+				286AB3B92EC67E7100AAD09E /* Sources */,
+				286AB3BA2EC67E7100AAD09E /* Frameworks */,
+				286AB3BB2EC67E7100AAD09E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				286AB3C02EC67E7100AAD09E /* MomentsWidget */,
+			);
+			name = MomentsWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MomentsWidgetExtension;
+			productReference = 286AB3BD2EC67E7100AAD09E /* MomentsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		281A9D2F2EBEB5B8002C0C3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					281A9D362EBEB5B8002C0C3D = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					286AB3BC2EC67E7100AAD09E = {
+						CreatedOnToolsVersion = 26.1;
+					};
+				};
+			};
+			buildConfigurationList = 281A9D322EBEB5B8002C0C3D /* Build configuration list for PBXProject "moments" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 281A9D2E2EBEB5B8002C0C3D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				286862D62EC8E226005183BA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 281A9D382EBEB5B8002C0C3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				281A9D362EBEB5B8002C0C3D /* moments */,
+				286AB3BC2EC67E7100AAD09E /* MomentsWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		281A9D352EBEB5B8002C0C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286AB3BB2EC67E7100AAD09E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281A9D332EBEB5B8002C0C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286AB3B92EC67E7100AAD09E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		286AB3B72EC5C3DC00AAD09E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 286AB3BC2EC67E7100AAD09E /* MomentsWidgetExtension */;
+			targetProxy = 286AB3B62EC5C3DC00AAD09E /* PBXContainerItemProxy */;
+		};
+		286AB3CD2EC67E7300AAD09E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 286AB3BC2EC67E7100AAD09E /* MomentsWidgetExtension */;
+			targetProxy = 286AB3CC2EC67E7300AAD09E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		281A9D402EBEB5B9002C0C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R54QH2958C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		281A9D412EBEB5B9002C0C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R54QH2958C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		281A9D432EBEB5B9002C0C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = moments/moments.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R54QH2958C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = moments/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Moments needs access to your local network to connect with your partner's device for sharing moments.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iftekharanwar.learn.moments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		281A9D442EBEB5B9002C0C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = moments/moments.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R54QH2958C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = moments/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Moments needs access to your local network to connect with your partner's device for sharing moments.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iftekharanwar.learn.moments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		286AB3D02EC67E7300AAD09E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MomentsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R54QH2958C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MomentsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MomentsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iftekharanwar.learn.moments.MomentsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		286AB3D12EC67E7300AAD09E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MomentsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R54QH2958C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MomentsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MomentsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iftekharanwar.learn.moments.MomentsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		281A9D322EBEB5B8002C0C3D /* Build configuration list for PBXProject "moments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281A9D402EBEB5B9002C0C3D /* Debug */,
+				281A9D412EBEB5B9002C0C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281A9D422EBEB5B9002C0C3D /* Build configuration list for PBXNativeTarget "moments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281A9D432EBEB5B9002C0C3D /* Debug */,
+				281A9D442EBEB5B9002C0C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286AB3CF2EC67E7300AAD09E /* Build configuration list for PBXNativeTarget "MomentsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286AB3D02EC67E7300AAD09E /* Debug */,
+				286AB3D12EC67E7300AAD09E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		286862D62EC8E226005183BA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		286862D72EC8E226005183BA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 286862D62EC8E226005183BA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		286862D92EC8E226005183BA /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 286862D62EC8E226005183BA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		286862DB2EC8E226005183BA /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 286862D62EC8E226005183BA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 281A9D2F2EBEB5B8002C0C3D /* Project object */;
+}
