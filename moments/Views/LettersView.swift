@@ -230,7 +230,6 @@ struct ComposeLetterView: View {
                 Color.white.ignoresSafeArea()
                 
                 VStack(spacing: 20) {
-                    // Header icon
                     ZStack {
                         Circle()
                             .fill(Color(hex: "FFE5EC"))
