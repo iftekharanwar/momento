@@ -1,2 +1,60 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Swift files
+*.swift text diff=swift
+
+# Xcode project files
+*.pbxproj merge=union
+*.xcworkspacedata merge=union
+*.xcscheme merge=union
+
+# Plist files
+*.plist text
+
+# Entitlements
+*.entitlements text
+
+# Markdown
+*.md text
+
+# JSON
+*.json text
+
+# Text files
+*.txt text
+
+# Shell scripts
+*.sh text eol=lf
+
+# Image files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+
+# Font files
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Video
+*.mov binary
+*.mp4 binary
+
+# Audio
+*.mp3 binary
+*.m4a binary
+
+# Build artifacts
+*.ipa binary
+*.app binary
+*.dSYM binary
