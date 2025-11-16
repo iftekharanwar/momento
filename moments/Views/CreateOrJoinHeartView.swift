@@ -10,15 +10,7 @@ struct CreateOrJoinHeartView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [
-                    Color(hex: "FFE5EC"),
-                    Color(hex: "FFF0F5")
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea()
+            BackgroundView()
             
             VStack(spacing: 40) {
                 Spacer()

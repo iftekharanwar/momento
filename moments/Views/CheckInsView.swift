@@ -24,7 +24,6 @@ struct CheckInsView: View {
             BackgroundView()
             
             VStack(spacing: 0) {
-                // Header
                 HStack {
                     Button(action: { dismiss() }) {
                         Image(systemName: "xmark")

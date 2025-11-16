@@ -18,15 +18,7 @@ struct AuthenticationView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [
-                    Color(hex: "FFE5EC"),
-                    Color(hex: "FFF0F5")
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea()
+            BackgroundView()
             
             VStack(spacing: 30) {
                 Spacer()
@@ -41,7 +33,7 @@ struct AuthenticationView: View {
                         .foregroundColor(.white)
                 }
                 
-                Text("lovelee")
+                Text("momento")
                     .font(.system(size: 42, weight: .bold))
                     .foregroundColor(.black)
                 

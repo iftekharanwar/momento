@@ -10,12 +10,7 @@ struct CalendarView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [
-                    Color(red: 0.80, green: 0.93, blue: 1.0),
-                    Color(red: 0.93, green: 0.97, blue: 1.0)
-                ], startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
+            BackgroundView()
             
             VStack(spacing: 16) {
                 HStack {
