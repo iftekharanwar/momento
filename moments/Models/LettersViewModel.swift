@@ -21,6 +21,7 @@ class LettersViewModel: ObservableObject {
     }
     
     func startListening(heartCode: String) {
+        //print("📮 LettersViewModel: Starting listener for heartCode: \(heartCode)")
         listener?.remove()
         
         listener = db.collection("letters")
@@ -30,6 +31,7 @@ class LettersViewModel: ObservableObject {
                 guard let self = self else { return }
                 
                 if let error = error {
+                    //print("❌ LettersViewModel Error: \(error.localizedDescription)")
                     self.errorMessage = error.localizedDescription
                     return
                 }
@@ -43,6 +45,7 @@ class LettersViewModel: ObservableObject {
                           let senderName = data["senderName"] as? String,
                           let content = data["content"] as? String,
                           let timestamp = data["createdAt"] as? Timestamp else {
+                        //print("⚠️ LettersViewModel: Invalid letter data in document \(doc.documentID)")
                         return nil
                     }
                     
@@ -57,17 +60,20 @@ class LettersViewModel: ObservableObject {
                     )
                 }
                 
+                //print("✅ LettersViewModel: Parsed \(self.letters.count) valid letters")
                 self.updateWidget()
             }
     }
     
     func sendLetter(heartCode: String, content: String, senderName: String, completion: @escaping (Bool) -> Void) {
         guard let userId = Auth.auth().currentUser?.uid else {
+            //print("❌ sendLetter: User not authenticated")
             errorMessage = "Not authenticated"
             completion(false)
             return
         }
         
+        //print("📤 Sending letter from \(senderName) (userId: \(userId)) to heartCode: \(heartCode)")
         isLoading = true
         
         let letterData: [String: Any] = [
@@ -79,15 +85,17 @@ class LettersViewModel: ObservableObject {
             "read": false
         ]
         
+        //print("📝 Letter data: \(letterData)")
         db.collection("letters").addDocument(data: letterData) { [weak self] error in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 
                 if let error = error {
+                    //print("❌ Failed to send letter: \(error.localizedDescription)")
                     self?.errorMessage = error.localizedDescription
                     completion(false)
                 } else {
-                    // Success - real-time listener will update the list automatically
+                    //print("✅ Letter sent successfully!")
                     completion(true)
                 }
             }

@@ -29,6 +29,12 @@ class PairingViewModel: ObservableObject {
     }
     
     func setupHeart(name: String, code: String, userName: String, isCreator: Bool) {
+        //print("💝 PairingViewModel: Setting up heart")
+        //print("   - Name: \(name)")
+        //print("   - Code: \(code)")
+        //print("   - UserName: \(userName)")
+        //print("   - IsCreator: \(isCreator)")
+        
         self.heartName = name
         self.heartCode = code
         self.currentUserName = userName
