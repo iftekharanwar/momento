@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285A48AD2ECBF71A00C25C77 /* momento.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 285A48AC2ECBF71A00C25C77 /* momento.pdf */; };
 		286862D82EC8E226005183BA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 286862D72EC8E226005183BA /* FirebaseAuth */; };
 		286862DA2EC8E226005183BA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 286862D92EC8E226005183BA /* FirebaseCore */; };
 		286862DC2EC8E226005183BA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 286862DB2EC8E226005183BA /* FirebaseFirestore */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		281A9D372EBEB5B8002C0C3D /* moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		285A48AC2ECBF71A00C25C77 /* momento.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = momento.pdf; sourceTree = "<group>"; };
 		286AB3862EC5A79100AAD09E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		286AB3882EC5A79100AAD09E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		286AB3BD2EC67E7100AAD09E /* MomentsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MomentsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				286AB3C02EC67E7100AAD09E /* MomentsWidget */,
 				286AB3852EC5A79100AAD09E /* Frameworks */,
 				281A9D382EBEB5B8002C0C3D /* Products */,
+				285A48AC2ECBF71A00C25C77 /* momento.pdf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285A48AD2ECBF71A00C25C77 /* momento.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
