@@ -250,7 +250,7 @@ struct HeartCodeSection: View {
                 }
                 
                 VStack(spacing: 4) {
-                    Text("Heart Code")
+                    Text(" Your Heart Code will appear here!")
                         .font(.system(size: 14))
                         .foregroundColor(.black.opacity(0.6))
                         .frame(maxWidth: .infinity, alignment: .leading)

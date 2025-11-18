@@ -21,6 +21,7 @@ class MusicViewModel: ObservableObject {
     }
     
     func startListening(heartCode: String) {
+        //print("🎵 MusicViewModel: Starting listener for heartCode: \(heartCode)")
         listener?.remove()
         
         listener = db.collection("musicTracks")
@@ -30,12 +31,14 @@ class MusicViewModel: ObservableObject {
                 guard let self = self else { return }
                 
                 if let error = error {
+                    //print("❌ MusicViewModel Error: \(error.localizedDescription)")
                     self.errorMessage = error.localizedDescription
                     return
                 }
                 
                 guard let documents = snapshot?.documents else { return }
                 
+                //print("🎶 MusicViewModel: Received \(documents.count) documents")
                 self.tracks = documents.compactMap { doc -> MusicTrack? in
                     let data = doc.data()
                     guard let heartCode = data["heartCode"] as? String,
@@ -45,6 +48,7 @@ class MusicViewModel: ObservableObject {
                           let artistName = data["artistName"] as? String,
                           let message = data["message"] as? String,
                           let timestamp = data["createdAt"] as? Timestamp else {
+                        //print("⚠️ MusicViewModel: Invalid track data in document \(doc.documentID)")
                         return nil
                     }
                     

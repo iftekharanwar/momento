@@ -18,7 +18,7 @@ struct CalendarView: View {
                         Image(systemName: "arrow.left.circle.fill")
                             .font(.system(size: 30))
                             .foregroundColor(Color(hex: "EC99B0"))
-                            .shadow(radius: 2)
+                            //.shadow(radius: 2)
                             .scaleEffect(1.1)
                     }
                     
@@ -28,12 +28,12 @@ struct CalendarView: View {
                         Text(viewModel.monthYearString)
                             .font(.system(size: 32, weight: .heavy))
                             .foregroundColor(Color(hex: "FF6B6B"))
-                            .shadow(color: .white.opacity(0.7), radius: 2)
+                            //.shadow(color: .white.opacity(0.7), radius: 2)
                         
-                        Capsule()
-                            .fill(Color(hex: "FFD6A5"))
-                            .frame(width: 120, height: 8)
-                            .shadow(radius: 1)
+                        //Capsule()
+                          //  .fill(Color(hex: "FFD6A5"))
+                            //\.frame(width: 120, height: 8)
+                            //.shadow(radius: 1)
                     }
                     .padding(.vertical, 10)
                     
@@ -43,7 +43,7 @@ struct CalendarView: View {
                         Image(systemName: "arrow.right.circle.fill")
                             .font(.system(size: 30))
                             .foregroundColor(Color(hex: "EC99B0"))
-                            .shadow(radius: 2)
+                            //.shadow(radius: 2)
                             .scaleEffect(1.1)
                     }
                 }

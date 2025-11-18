@@ -53,7 +53,7 @@ struct CreateHeartView: View {
                             .font(.system(size: 14))
                             .foregroundColor(.black.opacity(0.6))
                         
-                        TextField("", text: $heartName, prompt: Text("e.g., Me & Sarah").foregroundColor(.gray.opacity(0.4)))
+                        TextField("", text: $heartName, prompt: Text("e.g., Me & Maaryah").foregroundColor(.gray.opacity(0.4)))
                             .padding()
                             .background(Color(hex: "F5F5F5"))
                             .cornerRadius(12)
