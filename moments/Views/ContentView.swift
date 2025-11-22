@@ -25,7 +25,7 @@ struct ContentView: View {
                     .environmentObject(pairingViewModel)
             }
         }
-        .tint(Color(hex: "B2E4FC"))
+        .tint(Color(hex: "ED708C"))
     }
 
 
